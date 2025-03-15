@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: subscription-tracker-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5500
+      - key: DB_URI
+        value:"mongodb+srv://koushikedla01:Mogo321@cluster0.do94a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      - key: JWT_SECRET
+        value:"secret"
+      - key: EMAIL_PASSWORD
+        value: "emoatrbdxrashcva"
+      - key: ACCOUNT_EMAIL
+        value: "koushikedla01@gmail.com"
